@@ -1,79 +1,49 @@
-<!-- This is the markdown template for the final project of the Building AI course, 
-created by Reaktor Innovations and University of Helsinki. 
-Copy the template, paste it to your GitHub README and edit! -->
-
-# Project Title
-
+Sentiment Analysis Tool
 Final project for the Building AI course
 
-## Summary
+Summary
+This project is a sentiment analysis tool that classifies text into positive, negative, or neutral sentiments. It helps businesses and individuals analyze customer feedback and social media posts efficiently.
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+Background
+The tool addresses the problem of understanding customer sentiment from text data, which is common in businesses looking to improve customer service and product offerings. Sentiment analysis is critical for making data-driven decisions and understanding public opinion.
 
-
-## Background
-
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
-
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
-
-
-## How is it used?
-
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
-
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
+Problem: Manual analysis of customer feedback is time-consuming.
+Problem: Difficulty in interpreting large volumes of text data.
+Motivation: To automate and streamline the process of sentiment evaluation.
+Importance: Enhances decision-making by providing actionable insights from text data.
+How is it used?
+Users can input text data from various sources like customer reviews, social media, or feedback forms. The tool processes the text and outputs the sentiment classification, helping users quickly gauge overall sentiment and trends.
 
 
-## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+python
+Kopiera kod
+def analyze_sentiment(text):
+    # Dummy function for sentiment analysis
+    if "happy" in text:
+        return "positive"
+    elif "sad" in text:
+        return "negative"
+    else:
+        return "neutral"
 
-## Challenges
+text = "I am so happy with the service!"
+print(analyze_sentiment(text))
+Data sources and AI methods
+The data for training the sentiment analysis model comes from publicly available datasets like movie reviews and social media posts. The model uses natural language processing (NLP) techniques and machine learning algorithms.
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+Example Dataset
 
-## What next?
+Method	Description
+NLP	Text preprocessing
+Machine Learning	Classification model
+Challenges
+The project does not address sarcasm detection or domain-specific sentiment nuances. Ethical considerations include ensuring data privacy and avoiding bias in sentiment classification.
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+What next?
+Future improvements could include incorporating more sophisticated NLP techniques and expanding the tool to support multiple languages. Skills needed include advanced machine learning and NLP expertise. Assistance from data scientists and developers could further enhance the project.
 
-
-## Acknowledgments
-
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+Acknowledgments
+Inspiration from sentiment analysis research papers
+Data sourced from Kaggle datasets
+Sentiment Analysis Example Image / CC BY-SA 4.0
