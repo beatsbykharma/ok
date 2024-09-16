@@ -6,7 +6,7 @@ Final project for the Building AI course
 
 This project is a sentiment analysis tool that classifies text into positive, negative, or neutral sentiments. It helps businesses and individuals analyze customer feedback and social media posts efficiently.
 
-## Background
+## Building AI Course Project
 
 The tool addresses the problem of understanding customer sentiment from text data, which is common in businesses looking to improve customer service and product offerings. Sentiment analysis is critical for making data-driven decisions and understanding public opinion.
 
@@ -53,3 +53,6 @@ Future improvements could include incorporating more sophisticated NLP technique
 Inspiration from sentiment analysis research papers
 Data sourced from Kaggle datasets
 Sentiment Analysis Example Image / CC BY-SA 4.0
+
+![image of an online cat](https://tinyurl.com/elementsofaicat)
+
